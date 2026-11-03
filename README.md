@@ -1,4 +1,6 @@
-# CalVal_RS_Water
+# Pemodelan Kualitas Air dengan Penginderaan Jauh: Data dan Notebook Bab 7
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ikesari/Permodelan-Kualitas-Air-PJ/blob/main/Latihan_Bab7_Simulasi.ipynb)
 
 Materi pendamping buku **_Penginderaan Jauh untuk Pemodelan Kualitas Air: Konsep, Kalibrasi, Validasi, dan Praktik di Sungai, Danau, Waduk, dan Pesisir Indonesia_**.
 
@@ -10,7 +12,7 @@ Repositori ini berisi data latih dan notebook Google Colab untuk **Bab 7, subbab
 ## Mulai cepat
 
 1. Klik berkas `Latihan_Bab7_Simulasi.ipynb` di daftar berkas repositori ini.
-2. Klik tombol **Open in Colab** di bagian atas tampilan notebook. Kalau tombolnya tidak ada, buka [colab.research.google.com](https://colab.research.google.com), pilih **File → Open notebook → GitHub**, lalu tempel alamat repositori ini.
+2. Atau langsung klik tombol **Open in Colab** di atas. Cara lain: buka [colab.research.google.com](https://colab.research.google.com), pilih **File → Open notebook → GitHub**, lalu tempel alamat repositori ini.
 3. Di Colab, klik **Runtime → Run all**.
 
 Tanpa mengunggah apa pun, notebook akan membangkitkan ulang data latih dengan seed 2026. Hasilnya identik dengan berkas CSV di repositori ini.
@@ -28,14 +30,14 @@ Kolom `peran` menandai baris **pengembangan** dan **uji akhir**. Data uji akhir 
 
 ## Membaca data langsung dari GitHub
 
-Di notebook (bagian 3), isi dua variabel berikut dengan link *raw* berkas CSV di repositori ini:
+Notebook sudah diatur untuk membaca data langsung dari repositori ini:
 
 ```python
-URL_SUNGAI = "https://raw.githubusercontent.com/<akun>/CalVal_RS_Water/main/kasus1_sungai_sintetik_SIMULASI.csv"
-URL_WADUK  = "https://raw.githubusercontent.com/<akun>/CalVal_RS_Water/main/kasus2_waduk_sintetik_SIMULASI.csv"
+URL_SUNGAI = "https://raw.githubusercontent.com/ikesari/Permodelan-Kualitas-Air-PJ/main/kasus1_sungai_sintetik_SIMULASI.csv"
+URL_WADUK  = "https://raw.githubusercontent.com/ikesari/Permodelan-Kualitas-Air-PJ/main/kasus2_waduk_sintetik_SIMULASI.csv"
 ```
 
-Ganti `<akun>` dengan nama akun GitHub pemilik repositori. Link *raw* juga bisa didapat dengan membuka berkas CSV di GitHub lalu klik tombol **Raw**.
+Link yang sama bisa dipakai di Python atau R untuk membaca data tanpa mengunduhnya lebih dulu.
 
 ## Lisensi
 
